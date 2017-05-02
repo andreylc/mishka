@@ -1,0 +1,250 @@
+input[type="radio"], input[type="checkbox"] {
+  display: none;
+}
+
+.order-title {
+  font-size: 16px;
+  line-height: 30px;
+  color: $light-text-color;
+  @include open-sans;
+  padding-left: 225px;
+  margin-top: 70px;
+}
+
+.white-bg {
+  background: #ffffff;
+  padding: 60px 0 60px 225px;
+  position: relative;
+
+  &::before {
+    content: attr(data-title);
+    position: absolute;
+    left: 115px;
+    top: 80px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    @include open-sans;
+    color: #63d1bb;
+  }
+
+}
+
+.grey-bg {
+  background: #f1f1f1;
+  padding: 60px 0 60px 225px;
+  position: relative;
+  font-size: 0;
+
+  &::before {
+    content: attr(data-title);
+    position: absolute;
+    left: 115px;
+    top: 80px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    @include open-sans;
+    color: #63d1bb;
+  }
+
+  &::after {
+    content: attr(data-email);
+    position: absolute;
+    left: 115px;
+    top: 132px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    @include open-sans;
+    color: #63d1bb;
+  }
+}
+
+.radio__btn {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid $light-text-color;
+  border-radius: 50%;
+  position: relative; 
+  margin-bottom: 25px;
+
+  input[type="radio"]:checked + &::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #62d1ba;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: 15px; 
+  }
+
+  &:hover {
+    border-color: #62d1ba; 
+  }
+
+  &:active {
+    border-color: #c7c7c7; 
+  }
+}
+
+.radio-btn__desc {
+  display: block;
+  margin-left: 80px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  position: absolute;
+  top: 75px;
+}
+
+.radio-btn--layout {
+  top: 155px;
+}
+
+
+.checkbox__btn {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid $light-text-color;
+  position: relative; 
+  margin-bottom: 20px;
+
+  input[type="checkbox"]:checked + &::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 12px;
+    border-bottom: 2px solid $light-text-color;
+    border-left: 2px solid $light-text-color;
+    position: absolute;
+    right: 10px;
+    top: 15px; 
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    border-color: #62d1ba; 
+  }
+
+  &:active {
+    border-color: #c7c7c7; 
+  }
+}
+
+.checkbox-item {
+  display: inline-block;
+  position: relative;
+  width: 260px;
+  font-size: 0;
+}
+
+.checkbox-btn__desc {
+  margin-left: 80px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+
+.text-input--layout {
+  width: 715px;
+}
+
+.text__label {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.text__input {
+  outline: none;
+  height: 50px;
+  width: 575px;
+  border:0;
+  border-bottom: 2px solid $light-text-color;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:focus {
+    border-color: #62d1ba;
+  }
+}
+
+.input-name--long {
+  width: 626px;
+}
+
+input[placeholder] {
+  font-size: 18px;
+  line-height: 18px;
+  color: $light-text-color;
+}
+
+.contacts--input {
+  width: 700px;
+  background: #f1f1f1;
+}
+
+.tel--icon {
+  background: url("../img/phone.png") no-repeat 99% 50%;
+}
+
+.email--icon {
+  background: url("../img/mail.png") no-repeat 99% 50%;
+}
+
+.advanced__input {
+  outline: none;
+  width:666px;
+  max-width: 666px;
+  height: 106px;
+  border: 2px solid $light-text-color;
+  font-size: 18px;
+  line-height: 18px;
+  @include verdana;
+  padding: 15px;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:focus {
+    border-color: #62d1ba;
+  }
+}
+
+// input[type="text"]:invalid {
+//   border-color: red;
+// }
+
+.btn--margin {
+  margin-top: 90px;
+}
+
+.required-input {
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  @include open-sans;
+  position: absolute;
+  right: 225px;
+  bottom: 70px;
+  color: $light-text-color;
+}
+
+.footer--order {
+  margin-top: 30px !important;
+}

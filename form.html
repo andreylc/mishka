@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#63d1bb">
+    <title>MISHKA - Милые штуки ручной работы для дома</title>
+  </head>
+  <body>
+      <div class="main-wrapper">
+          <header class="main-header">
+              <nav class="top-menu">
+                  <ul class="top-menu-list">
+                      <li class="top-menu__item"><a class="top-menu__link" href="catalog.html">Каталог товаров</a></li>
+                      <li class="top-menu__item"><a class="top-menu__link" href="form.html">Вязание на заказ</a></li>
+                  </ul>
+                  <div class="top-logo">
+                    <a href="index.html"><img src="img/logo-top.png" alt="MISHKA" width="149" height="72"></a>
+                  </div>
+                   <div class="navigation-menu">
+                     <a class="search__btn" href="#">Поиск</a>
+                     <a  href="#cart" class="cart">Корзина: пока пуста</a>
+                   </div>
+                   <div class="hot-sale-panel">
+                     <a class="hot-sale__link" href="#">Новые поступления</a>
+                     <a class="hot-sale__link  hot_sale__link--margin-left" href="#">Распродажа</a>
+                     <span class="free-ship">Бесплатаная доставка по России</span>
+                   </div>
+              </nav>
+          </header>
+          <main class="main-order">
+              <div class="catalog-header">
+                <h1 class="catalog-title">Вязание на заказ</h1>
+              </div>
+              <div class="order-form-block">
+                <p class="order-title">
+                  Мы будем рады воплотить в жизнь ваши пожелания!<br>
+                  Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+                </p>
+                <form action="#" name="order" method="POST">
+                  <div class="white-bg" data-title="тип">
+                    <input type="radio" name="order-type" id="interior" checked>
+                      <label for="interior" class="radio__btn"></label>
+                      <span class="radio-btn__desc">Аксессуар для интерьера</span>
+                    <input type="radio" name="order-type" id="toy">
+                      <label for="toy" class="radio__btn"></label>
+                      <span class="radio-btn__desc  radio-btn--layout">Детcкая игрушка</span>                      
+                  </div>
+                  <div class="grey-bg  checkbox-layout--block" data-title="цвет">
+                    <div class="checkbox-item">
+                      <input type="checkbox" name="white" id="white" checked>
+                      <label for="white" class="checkbox__btn"></label>
+                      <span class="checkbox-btn__desc">Белый</span>
+                    </div>
+                    <div class="checkbox-item">  
+                      <input type="checkbox" name="grey" id="grey">
+                      <label for="grey" class="checkbox__btn"></label>
+                      <span class="checkbox-btn__desc">Серый</span>
+                    </div>
+                    <div class="checkbox-item">
+                      <input type="checkbox" name="tiffany" id="tiffany">
+                      <label for="tiffany" class="checkbox__btn"></label>
+                      <span class="checkbox-btn__desc">"Тиффани"</span>
+                    </div>
+                    <div class="checkbox-item">
+                      <input type="checkbox" name="black" id="black">
+                      <label for="black" class="checkbox__btn"></label>
+                      <span class="checkbox-btn__desc">Черный</span>
+                    </div>
+                    <div class="checkbox-item">
+                      <input type="checkbox" name="pink" id="pink">
+                      <label for="pink" class="checkbox__btn"></label>
+                      <span class="checkbox-btn__desc">Розовый</span>
+                    </div>
+                    <div class="checkbox-item">
+                      <input type="checkbox" name="orange" id="orange">
+                      <label for="orange" class="checkbox__btn"></label>
+                      <span class="checkbox-btn__desc">Оранжевый</span>
+                    </div>
+                  </div>
+                  <div class="white-bg text-input--layout" data-title="фио">
+                    <label for="surname" class="text__label">Фамилия:</label>
+                      <input type="text" id="surname" placeholder="Укажите фамилию" class="text__input" required>
+                    <label for="name" class="text__label">Имя:</label>
+                      <input type="text" id="name" placeholder="Введите ваше имя" class="text__input  input-name--long" required>
+                    <label for="patronymic" class="text__label">Отчество:</label>                      
+                      <input type="text" id="patronymic" placeholder="Отчество, если желаете" class="text__input">                      
+                  </div>
+                  <div class="grey-bg" data-title="тел" data-email="email">
+                    <input type="tel" name="tel" placeholder="+ 7 XXX XXX XX XX" class="text__input  contacts--input  tel--icon" required>
+                    <input type="email" name="email" placeholder="Мы не будем спамить, честно!" class="text__input  contacts--input email--icon" required>
+                  </div>
+                  <div class="white-bg" data-title="доп">
+                    <textarea name="advanced" id="advanced" class="advanced__input" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                    <button class="make__order btn--margin" type="submit">Отправить заказ</button>
+                    <span class="required-input">Все поля являются обязательными</span>
+                  </div>
+                </form>
+              </div>
+          </main>
+          <footer class="main-footer  footer--order">
+            <div class="footer-logo"></div>
+            <div class="social">
+              <a class="social-btn  insta--icon" href="#" title="instagram">Instagram</a>
+              <a class="social-btn  fb--icon" href="#" title="facebook">facebook</a>
+              <a class="social-btn  tw--icon" href="#" title="twitter">twitter</a>
+            </div>
+            <div class="copyright">
+              <span class="copyright">Разработано</span>
+              <a class="ha-icon" href="http://htmlacademy.ru" target="_blank" title="перейти на сайт htmlacademy">htmlacademy</a>
+            </div>
+          </footer>
+      </div>
+  </body>
+</html>

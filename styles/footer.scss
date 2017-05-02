@@ -1,0 +1,61 @@
+.main-footer {
+  padding: 60px 50px;
+  margin-top: 105px;
+  background: #f1f1f1;
+  position: relative;
+}
+
+.footer-logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 102px;
+  height: 34px;
+   background: url("../img/logo-footer.png");
+}
+
+.social {
+  position: absolute;
+  left: 480px;
+  height: 34px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.social-btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px;
+  font-size: 0;
+  width: 21px;
+  height: 34px;
+}
+
+.insta--icon{
+  background: url("../img/insta.png") no-repeat 50%;
+}
+
+.fb--icon{
+  background: url("../img/fb.png") no-repeat 50%;
+}
+
+.tw--icon{
+  background: url("../img/twitter.png") no-repeat 50%;
+}
+
+.copyright {
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  right: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.ha-icon {
+  display: block;
+  font-size: 0;
+  width: 27px;
+  height: 34px;
+  background: url("../img/ha.png");
+}

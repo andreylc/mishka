@@ -1,0 +1,498 @@
+.main-content {
+    background: $main-bg-color;
+}
+.showcase {
+    position: relative;
+    background: $light-gray-bg;
+    margin-bottom: 70px;
+}
+
+.head-title {
+    position: absolute;
+    top: 150px;
+    left: 295px;
+    max-width: 625px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 57px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.main-mishka__bg {
+    width: 1150px;
+    height: 746px;
+    background:  url("../img/main-mishka-bg.png") no-repeat;
+    margin:  0;
+}
+
+.category-items-block {
+    font-size: 0;
+    width: 1050px;
+    margin: 0 auto;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -20px;
+        left: -50px;
+        width: 1150px;
+        height: 34px;
+        background: url("../img/zigzag.png") no-repeat;
+    }
+}
+
+.category-item {
+    width: 445px;
+    height: 80px;
+    display: inline-block;
+    @include tahoma; 
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    padding:  20px 40px;
+    color:  #ffffff;
+
+    & span {
+        display: block;
+        width: 120px;
+    }
+
+    &:hover {
+        height: 85px;
+        padding: 15px 40px;
+    }
+
+    &:active {
+        color: #97e2d2;
+    }
+}
+
+.left {
+    background: #63d1bb;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 30px;
+        right: 25px;
+        display: block;
+        width: 60px;
+        height: 62px;
+        background: url("../img/lamp.png") no-repeat 50%;
+    }
+
+    &:hover {
+        background: #59d5bc;
+    }
+
+    &:active {
+        background: #59d5bc;
+    }    
+}
+
+.right {
+    background: #56c3b2;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 30px;
+        right: 38px;
+        display: block;
+        width: 60px;
+        height: 62px;
+        background: url("../img/toy.png") no-repeat 50%;
+    }
+
+    &:hover {
+        background: #46c1ae;
+    }
+
+    &:active {
+        background: #46c1ae;
+    } 
+
+}
+
+.content--layout {
+    padding-left: 175px;
+    box-sizing: border-box;
+}
+
+.top-goods {
+    padding: 0 50px;
+    font-size: 0;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        position: relative;
+        right: 50px;
+        width: 1150px;
+        height: 23px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        background: url("../img/zigzag-goods.png");
+    }
+}
+
+.goods-info {
+    display: inline-block;
+    vertical-align: top;
+    width: 525px;
+    @include open-sans;
+    font-size: 16px;
+    position: relative;
+}
+
+.goods-title {
+    font-size: 50px;
+    line-height: 57px;
+    @include verdana;
+    width: 550px;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50px;
+        top: 60px;
+        width: 66px;
+        height: 31px;
+        background: url("../img/top-goods.png");
+    }
+}
+
+.goods-desc {
+    color: $light-text-color;
+    line-height: 30px;
+    width: 300px;
+}
+
+.goods-param {
+    margin-top: 55px;
+    width: 290px;
+    border-collapse: collapse;
+    color: $light-text-color;
+    & tr {
+        border-bottom: 1px solid  #ececec;
+    }
+    & td {
+        height: 40px;
+    }
+}
+
+.goods-price {
+    display: block;
+    width: 290px;
+    @include verdana;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $light-text-color;
+    margin-top: 110px;
+    text-align: center;
+}
+
+.goods-image {
+    display: inline-block;
+    vertical-align: top;
+    width: 525px;
+}
+
+.add-to-cart {
+    display: block;
+    @include open-sans;
+    width: 286px;
+    height: 48px;
+    margin-top: 35px;
+    border: 2px solid $light-text-color;
+    color: $light-text-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 48px;
+
+    &:hover {
+        background: $light-text-color;
+        color: #ffffff;
+    }    
+
+    &:active {
+        color: #8d8d8d;
+    }
+}
+
+.about {
+    position: relative;
+    padding-left: 225px; 
+}
+
+.about-title {
+    font-size: 50px;
+    line-height: 57px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 90px;
+}
+
+.differences {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+        font-size: 20px;
+        font-weight: 700;
+        display: inline-block;
+        width: 350px;
+        height: 145px;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -50px;
+            width: 55px;
+            height: 38px;
+        }
+
+         &:nth-of-type(1)::before {
+            background: url("../img/icon-1.png") no-repeat 50%;
+        }
+        &:nth-of-type(2)::before {
+            background: url("../img/icon-2.png") no-repeat 50%;
+        }
+        &:nth-of-type(3)::before {
+            background: url("../img/icon-3.png") no-repeat 50%;
+        }
+        &:nth-of-type(4)::before {
+            background: url("../img/icon-4.png") no-repeat 50%;
+        }
+        &:nth-of-type(5)::before {
+            background: url("../img/icon-5.png") no-repeat 50%;
+        }
+        &:nth-of-type(6)::before {
+            background: url("../img/icon-6.png") no-repeat 50%;
+        }
+    }
+}
+
+.reviews {
+    position: relative;
+    padding: 50px 50px 0 225px;
+    min-height: 457px;
+    margin-bottom: 80px;
+    background: url("../img/review-img.png") no-repeat 6% 50%;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -130px;
+        left: 0px;
+        width: 1150px;
+        height: 23px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        background: url("../img/zigzag-goods.png");
+    }
+}
+
+.reviews-title {
+    font-size: 50px;
+    line-height: 57px;
+    font-weight: 700;
+}
+
+.reviews-text {
+    display: block;
+    font-style: normal;
+    width: 705px;
+    font-size: 16px;
+    line-height: 30px;
+    @include open-sans;
+    color: $light-text-color;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.reviews__author {
+    @include verdana;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.reviews__author-link {
+    font-size: 16px;
+    line-height: 30px;
+    color: $light-text-color;
+}
+
+.reviews-nav {
+    position: relative;
+}
+
+.new-review-btn {
+    width: 171px;
+    height: 48px;
+    position: absolute;
+    top: -290px;
+    right: 0px;
+    border: 2px solid $light-text-color;
+    background: none;
+    @include open-sans;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        background: $light-text-color;
+        color: #ffffff;
+    }    
+
+    &:active {
+        color: #8d8d8d;
+    }
+}
+
+.nav-btn {
+    width: 50px;
+    height: 26px;
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 0;
+    cursor: pointer;
+    top: -45px;
+}
+.prev--btn {
+    right: 95px;
+    background: url("../img/prev-arrow.png") no-repeat 50%;
+
+    &:hover {
+        background: url("../img/prev-arrow-h.png") no-repeat 50%;
+    }
+
+    &:active {
+        background: url("../img/prev-arrow-a.png") no-repeat 50%;
+    }
+}
+
+.next--btn {
+    right: 20px;
+    background: url("../img/next-arrow.png") no-repeat 50%;
+
+    &:hover {
+        background: url("../img/next-arrow-h.png") no-repeat 50%;
+    }
+
+    &:active {
+        background: url("../img/next-arrow-a.png") no-repeat 50%;
+    }
+}
+
+.contacts {
+    position: relative;
+    padding: 100px 50px 0 225px;
+}
+
+.contacts-title {
+    font-size: 50px;
+    line-height: 57px;
+    font-weight: 700;
+    
+    &::before {
+        content: "";
+        display: block;
+        width: 47px;
+        height: 81px;
+        position: absolute;
+        left: 100px;
+        background: url("../img/flag.png");
+    }
+}
+
+.contacts__table {
+    margin-top: 45px;
+    margin-bottom: 95px;
+    border-collapse: collapse;
+    width:  290px;
+    @include open-sans;
+    font-size: 16px;
+    line-height: 30px;
+    color: $light-text-color;
+
+    & td {
+        padding: 10px;
+        padding-bottom: 20px;
+        vertical-align: top;
+    }
+}
+
+.table--email {
+    width: 55px;
+}
+
+.email--link {
+    color: $light-text-color;
+
+    &:hover {
+        color: #46c1ae; 
+    }
+
+    &:active {
+        color: #d9f0eb;
+    }
+}
+
+.feedback-btn {
+    display: block;
+    @include open-sans;
+    width: 226px;
+    height: 48px;
+    margin-top: 35px;
+    border: 2px solid $light-text-color;
+    color: $light-text-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 48px;
+
+    &:hover {
+        background: $light-text-color;
+        color: #ffffff;
+    }    
+
+    &:active {
+        color: #8d8d8d;
+    }    
+}
+
+.map {
+    position: absolute;
+    right: 50px;
+    top: 75px;
+    width: 525px;
+    height: 457px;
+    background: url("../img/map-marker.png") no-repeat 50% 50%, 
+                             url("../img/map.png");
+}
