@@ -1,8 +1,0 @@
-// Поместите параметры в этот файл, чтобы перезаписать параметры по умолчанию и пользовательские параметры.
-{
-   "editor.fontFamily": "Ubuntu Mono",
-   "editor.fontSize": 17,
-   "editor.tabSize": 2,
-   "editor.fontWeight": "normal"
-
-}
